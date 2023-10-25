@@ -25,6 +25,7 @@
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 import json
+import yaml
 
 # triton_python_backend_utils is available in every Triton Python model. You
 # need to use this module to create inference requests and responses. It also
@@ -81,6 +82,10 @@ class TritonPythonModel:
 
         config_yml_loc = f"{args['model_repository']}/{args['model_version']}/config.yml"
         print(f'config_yml_loc: {config_yml_loc}')
+
+        with open(config_yml_loc, 'r') as file:
+            configuration = yaml.safe_load(file)
+            print(f'configuration: {str(configuration)}')
 
         print('Initialized...')
 
