@@ -1,0 +1,9 @@
+candidate_generation: {}
+environment: null
+features: {}
+name: category
+orchestrator:
+  entrypoint_script: null
+  min_version: null
+request:
+  model_class: recspoc.models.propositions.category.request.CategoryRequest
