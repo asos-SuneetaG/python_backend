@@ -79,6 +79,9 @@ class TritonPythonModel:
         print(f'model_version: {args["model_version"]}')
         print(f'model_name: {args["model_name"]}')
 
+        config_yml_loc = f"{args['model_repository']}/{args['model_version']}/config.yml"
+        print(f'config_yml_loc: {config_yml_loc}')
+
         print('Initialized...')
 
     def execute(self, requests):
