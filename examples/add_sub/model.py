@@ -75,7 +75,7 @@ class TritonPythonModel:
         print(f'model_config: {args["model_config"]}')
         print(f'model_instance_kind: {args["model_instance_kind"]}')
         print(f'model_instance_device_id: {args["model_instance_device_id"]}')
-        print(f'model_repository: {sargs["model_repository"]}')
+        print(f'model_repository: {args["model_repository"]}')
         print(f'model_version: {args["model_version"]}')
         print(f'model_name: {args["model_name"]}')
 
