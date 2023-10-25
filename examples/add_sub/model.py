@@ -72,6 +72,8 @@ class TritonPythonModel:
             output1_config["data_type"]
         )
 
+        print('Initialized...')
+
     def execute(self, requests):
         """`execute` MUST be implemented in every Python model. `execute`
         function receives a list of pb_utils.InferenceRequest as the only
