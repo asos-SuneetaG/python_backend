@@ -72,6 +72,13 @@ class TritonPythonModel:
             output1_config["data_type"]
         )
 
+        print(f'self.model_config: {self.model_config}')
+        print(f'self.model_instance_kind: {self.model_instance_kind}')
+        print(f'self.model_instance_device_id: {self.model_instance_device_id}')
+        print(f'self.model_repository: {self.model_repository}')
+        print(f'self.model_version: {self.model_version}')
+        print(f'self.model_name: {self.model_name}')
+
         print('Initialized...')
 
     def execute(self, requests):
